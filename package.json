@@ -1,0 +1,16 @@
+{
+  "author": "Matt Insler <matt.insler@gmail.com> (http://www.mattinsler.com)",
+  "name": "switchback",
+  "description": "Command-line library for apps like heroku and jitsu",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattinsler/switchback.git"
+  },
+  "engines": {
+    "node": "0.4.x"
+  },
+  "main": "lib/switchback",
+  "dependencies": {},
+  "devDependencies": {}
+}

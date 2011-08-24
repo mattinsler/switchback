@@ -5,11 +5,20 @@ var switchback = require('../lib/switchback');
 switchback.command('echo', {
   description: 'Echos your arguments',
   switches: {
-    c: 'color'
+    c: 'color',
+    b: {
+      name: 'boolean',
+      boolean: true
+    }
   },
   method: function(context) {
     console.log(context.arguments.join(' '));
   }
-});
-
-switchback.exec();
+})
+.command('foo', {
+  description: 'bar',
+  method: function() {
+    
+  }
+})
+.exec();
