@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
-var switchback = require('../lib/switchback');
+var sys = require('sys')
+  , switchback = require('../lib/switchback');
 
-switchback.command('echo', function(context) {
-  console.log(context.arguments.join(' '));
+switchback.command('echo', function() {
+  sys.puts(Array.prototype.slice.call(arguments, 0).join(' '));
 }).exec();
