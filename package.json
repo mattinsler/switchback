@@ -8,7 +8,7 @@
     "url": "git://github.com/mattinsler/switchback.git"
   },
   "engines": {
-    "node": "0.4.x"
+    "node": ">= 0.4.0"
   },
   "main": "lib/switchback",
   "dependencies": {},
