@@ -11,11 +11,11 @@ npm install switchback
 Simple
 
 ```javascript
-var sys = require('sys')
+var util = require('util')
   , switchback = require('switchback');
 
 switchback.command('echo', function() {
-  sys.puts(Array.prototype.slice.call(arguments, 0).join(' '));
+  util.puts(Array.prototype.slice.call(arguments, 0).join(' '));
 }).exec();
 ```
 
@@ -25,7 +25,7 @@ With description
 switchback.command('echo', {
   description: 'This will echo back what you write',
   method: function() {
-    sys.puts(Array.prototype.slice.call(arguments, 0).join(' '));
+    util.puts(Array.prototype.slice.call(arguments, 0).join(' '));
   }
 }).exec();
 ```
@@ -39,7 +39,7 @@ switchback.command('foo', {
   scope: foo,
   description: 'Print out this.bar',
   method: function() {
-    sys.puts(this.bar);
+    util.puts(this.bar);
   }
 }).exec();
 ```

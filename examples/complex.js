@@ -2,6 +2,8 @@
 
 var switchback = require('../lib/switchback');
 
+switchback.program('complex');
+
 switchback.command('echo', {
   description: 'Echos your arguments',
   switches: {

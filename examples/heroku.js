@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var switchback = require('../lib/switchback');
+var switchback = require('../lib/switchback').program('heroku');
 
 function foo(name) {
   return function(args) {
